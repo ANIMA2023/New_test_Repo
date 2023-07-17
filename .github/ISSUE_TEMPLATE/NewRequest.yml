@@ -1,0 +1,50 @@
+name: New Request
+description: File a new work request
+title: "[UCMGID : Investment Name]: "
+labels: ["New Issue", "Work Request"]
+body:
+  - type: input
+    id: Project-in-PPM-Optics
+    attributes:
+      label: Project Name
+      description: 
+    validations:
+      required: false      
+  - type: textarea
+    id: Project-Description
+    attributes:
+      label: Description of Investment or Project or Task or Capability Number
+      description: 
+    validations:
+      required: true       
+  - type: input
+    id: Estimate
+    attributes:
+      label: Estimate To Complete (in hours)
+      description: 
+    validations:
+      required: false       
+  - type: input
+    id: Target-Date
+    attributes:
+      label: Target Completion Date
+      value: DD-MMM-YY
+      description: 
+    validations:
+      required: false  
+  - type: textarea
+    id: SprintDeliverables
+    attributes:
+      label: Sprint Deliverables
+      description: 
+    validations:
+      required: false       
+  - type: dropdown
+    id: Complexity
+    attributes:
+      label: Complexity
+      multiple: false
+      options:
+        - High
+        - Medium
+        - Low
